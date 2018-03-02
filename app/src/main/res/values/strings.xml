@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Popular Movies</string>
+    <string name="popular_movies">Popular</string>
+    <string name="top_rated_movies">Top Rated</string>
+    <string name="favourite_movies">Favourites</string>
+
+    <string name="content_authority">inc.ahmedmourad.popularmovies</string>
+
+    <string name="default_poster_content_description">Movie\'s poster image</string>
+    <string name="backdrop_image_content_description">Movie\'s Backdrop image</string>
+    <string name="plot_synopsis">Plot Synopsis</string>
+
+    <plurals name="runtime_hours">
+        <item quantity="one">%1$d hour</item>
+        <item quantity="other">%1$d hours</item>
+    </plurals>
+    <plurals name="runtime_minutes">
+        <item quantity="one">%1$d minute</item>
+        <item quantity="other">%1$d minutes</item>
+    </plurals>
+
+    <string name="rating">%1$s / 5.0</string>
+
+    <string name="genres">Genres</string>
+    <string name="adult">ADULT</string>
+    <string name="error_message">Something went wrong while loading data.</string>
+    <string name="network_error">Movie Sync Failed!\nCheck your network connection.</string>
+
+    <string name="network_error_cause">Movie Sync Failed!\n%1$s\n%2$s</string>
+    <string name="change_layout">Change layout</string>
+    <string name="videos">Videos</string>
+    <string name="play_video">Play video</string>
+    <string name="reviews">Reviews</string>
+    <string name="hd">HD</string>
+    <string name="thumbnail">Thumbnail</string>
+    <string name="view_all">VIEW ALL</string>
+    <string name="close">Close</string>
+    <string name="play_in_app">Play in app</string>
+    <string name="share_movie">Share movie</string>
+    <string name="no_videos_available">No videos available!</string>
+    <string name="no_data_available">No data available!</string>
+    <string name="no_reviews_available">No reviews available!</string>
+
+</resources>

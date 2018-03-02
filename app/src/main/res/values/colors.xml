@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="refresh_progress_background">#455A64</color>
+
+    <color name="refresh_progress_1">#64B5F6</color>
+    <color name="refresh_progress_2">#F44336</color>
+    <color name="refresh_progress_3">#7CB342</color>
+
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="inc.ahmedmourad.popularmovies">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <permission
+        android:name="inc.ahmedmourad.popularmovies.ACCESS_FAVOURITE_MOVIES"
+        android:label="Access user's favourite movies"
+        android:protectionLevel="normal" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        android:fullBackupContent="@xml/backup_descriptor">
+        <activity android:name=".view.activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http"
+                    android:host="inc.ahmedmourad.popularmovies"
+                    android:pathPrefix="/main" />
+            </intent-filter>
+        </activity>
+        <service
+            android:name=".model.sync.SyncJobService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".model.sync.SyncIntentService"
+            android:exported="false" />
+        <provider
+            android:name=".model.database.MovieProvider"
+            android:authorities="@string/content_authority"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="inc.ahmedmourad.popularmovies.ACCESS_FAVOURITE_MOVIES"
+            android:syncable="true" />
+    </application>
+
+</manifest>

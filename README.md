@@ -40,6 +40,7 @@ In app:
 ![Screenshot 12](https://github.com/AhmedMouradDev/Android-Developer-Nanodegree_Project-3/blob/master/28641584_2127747830790755_1256729483_o.png)
 
 Via YouTube App:
+
 ![Screenshot 13](https://github.com/AhmedMouradDev/Android-Developer-Nanodegree_Project-3/blob/master/28536679_2127747294124142_2000697111_n.png?raw=true)
 
 ### Movie Reviews

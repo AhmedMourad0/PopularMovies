@@ -440,8 +440,6 @@ public class DetailsController extends Controller implements AppBarLayout.OnOffs
 
             cursor.close();
 
-//            collapsingToolbar.setTitleEnabled(false);
-//            collapsingToolbar.setSubtitle(movie.tagline);
             collapsingToolbar.setTitle(movie.originalTitle);
             collapsingToolbar.setSubtitle(movie.tagline);
 
@@ -648,7 +646,7 @@ public class DetailsController extends Controller implements AppBarLayout.OnOffs
                     movie.originalTitle + "\n\n" +
                             movie.overview + "\n\n" +
                             trailerUrl + "\n\n" +
-                            "Shared via " + context.getString(R.string.app_name));
+                            "Shared via " + context.getString(R.string.app_name) + " App");
 
             startActivity(sendIntent);
         }

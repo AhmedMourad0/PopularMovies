@@ -1,4 +1,4 @@
-# Popular Movies Project (Stage 2)
+# PopularMovies
 
 ## Project Overview
 PopularMovies is an app that gives you all you need to know about movies and TV shows and a lot more..
